@@ -5,14 +5,22 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PORTOFOLIO</title>
-    <base href="/ahmedfathallah2.github.io/" />
+
+    <!-- IMPORTANT: Correct base href for GitHub Pages user site -->
+    <base href="/" />
+
+    <!-- Styles -->
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="PORTOFOLIO.styles.css" />
+
+    <!-- Icons -->
     <link rel="icon" type="image/png" href="favicon.png" />
-    <link href="PORTOFOLIO.styles.css" rel="stylesheet" />
-    <link href="manifest.webmanifest" rel="manifest" />
     <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
     <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png" />
+
+    <!-- Manifest -->
+    <link href="manifest.webmanifest" rel="manifest" />
 </head>
 
 <body>
@@ -29,8 +37,12 @@
         <a href="" class="reload">Reload</a>
         <a class="dismiss">🗙</a>
     </div>
+
+    <!-- Blazor WebAssembly Runtime -->
     <script src="_framework/blazor.webassembly.js"></script>
-    <script>navigator.serviceWorker.register('service-worker.js');</script>
+
+    <!-- TEMP: Removed service worker to avoid GitHub redirect issues -->
+    <!-- <script>navigator.serviceWorker.register('service-worker.js');</script> -->
 </body>
 
 </html>
